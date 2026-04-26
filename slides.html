@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The AI Collective Barcelona — Presentation 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -207,13 +208,15 @@
       display:flex; align-items:center; gap:10px; flex:1; justify-content:center;
     }
     .partner-logo-wrap {
-      background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.10);
-      border-radius:8px; padding:5px 12px;
+      background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.11);
+      border-radius:8px; padding:4px 14px;
       display:flex; align-items:center; justify-content:center;
-      transition:all .3s; height:36px; min-width:80px;
+      transition:all .3s; height:44px; flex:0 0 auto;
     }
-    .partner-logo-wrap:hover { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.2); transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.35); }
-    .partner-logo-wrap svg { height:20px; width:auto; }
+    .partner-logo-wrap:hover { background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.22); transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,.35); }
+    .partner-logo-wrap svg { height:26px; width:auto; max-width:110px; }
+    .partner-logo-wrap.innoit-wrap { padding:0; overflow:hidden; border-radius:8px; }
+    .partner-logo-wrap.innoit-wrap svg { height:42px; width:auto; }
 
     /* ═══════════════════════════════════════════
        SLIDE 2 — WHAT WE DO
@@ -643,55 +646,71 @@
       </div>
       <!-- Centre: Partner logos -->
       <div class="partner-logos">
-        <!-- DAMM -->
+
+        <!-- DAMM: Gothic/blackletter red wordmark -->
         <div class="partner-logo-wrap" title="Damm">
-          <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="14,2 16.5,9.5 24,9.5 18,14.5 20.5,22 14,17.5 7.5,22 10,14.5 4,9.5 11.5,9.5" fill="#E32819"/>
-            <polygon points="14,5 15.8,11 21.5,11 17,14.2 18.8,20 14,17 9.2,20 11,14.2 6.5,11 12.2,11" fill="#C3943A"/>
-            <text x="30" y="25" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#E32819" letter-spacing="1">DAMM</text>
+          <svg viewBox="0 0 100 38" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="30" font-family="UnifrakturMaguntia,serif" font-size="28" font-weight="400" fill="#CC1010" text-anchor="middle">Damm</text>
           </svg>
         </div>
-        <!-- DYNATRACE -->
+
+        <!-- DYNATRACE: 3D cube (green/blue/purple) + wordmark -->
         <div class="partner-logo-wrap" title="Dynatrace">
-          <svg viewBox="0 0 130 36" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="dt-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#B4DC00"/><stop offset="100%" stop-color="#73BE28"/></linearGradient></defs>
-            <path d="M8 4 L20 4 L20 20 Q14 26 8 22 Z" fill="url(#dt-g)" opacity="0.9"/>
-            <path d="M10,13 L18,13 M14,9 L14,19" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <text x="26" y="25" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#e2e8f0" letter-spacing="0.3">dynatrace</text>
+          <svg viewBox="0 0 120 42" xmlns="http://www.w3.org/2000/svg">
+            <!-- Top face (lime green) -->
+            <polygon points="18,4 30,10 18,16 6,10" fill="#82C341"/>
+            <!-- Left face (sky blue) -->
+            <polygon points="6,10 18,16 18,28 6,22" fill="#3EB7E8"/>
+            <!-- Right face (purple) -->
+            <polygon points="18,16 30,10 30,22 18,28" fill="#7B3FAB"/>
+            <text x="35" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0" letter-spacing="0.2">dynatrace</text>
           </svg>
         </div>
-        <!-- UPF -->
+
+        <!-- UPF: Red border box with upf. + Universitat Pompeu Fabra Barcelona -->
         <div class="partner-logo-wrap" title="Universitat Pompeu Fabra">
-          <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="8" width="5" height="20" rx="1" fill="#5b9bd5"/>
-            <rect x="11" y="4" width="5" height="24" rx="1" fill="#5b9bd5"/>
-            <rect x="18" y="8" width="5" height="20" rx="1" fill="#5b9bd5"/>
-            <text x="30" y="20" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#e2e8f0" letter-spacing="1">UPF</text>
-            <text x="30" y="30" font-family="Arial,sans-serif" font-size="7" font-weight="400" fill="#94a3b8" letter-spacing="0.2">Pompeu Fabra</text>
+          <svg viewBox="0 0 160 42" xmlns="http://www.w3.org/2000/svg">
+            <!-- Red bordered box background (white fill) -->
+            <rect x="2" y="2" width="38" height="38" rx="1" fill="white" stroke="#CC0000" stroke-width="2.5"/>
+            <!-- upf. in red serif -->
+            <text x="20" y="34" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#CC0000" text-anchor="middle">upf.</text>
+            <!-- Right side text -->
+            <text x="46" y="16" font-family="Georgia,serif" font-size="9" font-weight="700" fill="#e2e8f0">Universitat</text>
+            <text x="46" y="27" font-family="Georgia,serif" font-size="9" font-weight="700" fill="#e2e8f0">Pompeu Fabra</text>
+            <text x="46" y="37" font-family="Georgia,serif" font-size="9" font-style="italic" fill="#94a3b8">Barcelona</text>
           </svg>
         </div>
-        <!-- INNOIT -->
-        <div class="partner-logo-wrap" title="InnoIT">
-          <svg viewBox="0 0 100 36" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="innoit-g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#6366F1"/></linearGradient></defs>
-            <circle cx="14" cy="18" r="6" fill="none" stroke="url(#innoit-g)" stroke-width="2.5"/>
-            <circle cx="14" cy="18" r="2.5" fill="url(#innoit-g)"/>
-            <line x1="20" y1="18" x2="26" y2="18" stroke="url(#innoit-g)" stroke-width="2"/>
-            <text x="28" y="23" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="url(#innoit-g)">InnoIT</text>
+
+        <!-- INNOIT: Dark bg, white Inno + pink it + inspiring talent -->
+        <div class="partner-logo-wrap innoit-wrap" title="InnoIT">
+          <svg viewBox="0 0 140 42" xmlns="http://www.w3.org/2000/svg">
+            <!-- Dark background -->
+            <rect width="140" height="42" rx="4" fill="#111111"/>
+            <!-- Inno in white bold -->
+            <text x="10" y="27" font-family="Arial Black,Impact,sans-serif" font-size="20" font-weight="900" fill="#ffffff">Inno</text>
+            <!-- it in hot pink -->
+            <text x="72" y="27" font-family="Arial Black,Impact,sans-serif" font-size="20" font-weight="900" fill="#E91E8C">it</text>
+            <!-- inspiring talent tagline -->
+            <text x="10" y="38" font-family="Arial,sans-serif" font-size="7.5" fill="#888888" letter-spacing="0.3">inspiring talent</text>
           </svg>
         </div>
-        <!-- THE AI SUMMIT -->
+
+        <!-- THE AI SUMMIT: Yellow detection-box mark -->
         <div class="partner-logo-wrap" title="The AI Summit">
-          <svg viewBox="0 0 130 36" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="3" width="8" height="2.5" fill="#FFEB00"/><rect x="3" y="3" width="2.5" height="8" fill="#FFEB00"/>
-            <rect x="19" y="3" width="8" height="2.5" fill="#FFEB00"/><rect x="24" y="3" width="2.5" height="8" fill="#FFEB00"/>
-            <rect x="3" y="25" width="8" height="2.5" fill="#FFEB00"/><rect x="3" y="19" width="2.5" height="8" fill="#FFEB00"/>
-            <rect x="19" y="25" width="8" height="2.5" fill="#FFEB00"/><rect x="24" y="19" width="2.5" height="8" fill="#FFEB00"/>
-            <text x="9" y="23" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#FFEB00">AI</text>
-            <text x="34" y="16" font-family="Arial,sans-serif" font-size="8" font-weight="600" fill="rgba(248,250,255,0.5)" letter-spacing="1">THE</text>
-            <text x="34" y="27" font-family="Arial,sans-serif" font-size="10" font-weight="800" fill="#f8faff" letter-spacing="0.5">SUMMIT</text>
+          <svg viewBox="0 0 120 42" xmlns="http://www.w3.org/2000/svg">
+            <!-- Object detection corner marks in yellow -->
+            <rect x="3" y="4" width="9" height="2.5" fill="#FFEB00"/><rect x="3" y="4" width="2.5" height="9" fill="#FFEB00"/>
+            <rect x="21" y="4" width="9" height="2.5" fill="#FFEB00"/><rect x="27" y="4" width="2.5" height="9" fill="#FFEB00"/>
+            <rect x="3" y="29" width="9" height="2.5" fill="#FFEB00"/><rect x="3" y="22" width="2.5" height="9" fill="#FFEB00"/>
+            <rect x="21" y="29" width="9" height="2.5" fill="#FFEB00"/><rect x="27" y="22" width="2.5" height="9" fill="#FFEB00"/>
+            <!-- AI centred in box -->
+            <text x="15" y="26" font-family="Arial Black,sans-serif" font-size="11" font-weight="900" fill="#FFEB00" text-anchor="middle">AI</text>
+            <!-- THE + SUMMIT -->
+            <text x="38" y="17" font-family="Arial,sans-serif" font-size="7.5" font-weight="600" fill="rgba(248,250,255,0.55)" letter-spacing="1.5">THE</text>
+            <text x="38" y="29" font-family="Arial Black,sans-serif" font-size="10" font-weight="900" fill="#f8faff" letter-spacing="0.5">SUMMIT</text>
           </svg>
         </div>
+
       </div>
       <!-- Right: CTA -->
       <a href="https://aicollective.com" class="s2-cta" target="_blank">
@@ -701,80 +720,8 @@
       </a>
     </div>
 
-    <!-- Session Partners -->
-    <div class="partner-bar">
-      <div class="partner-label">Session Partners</div>
-      <div class="partner-logos">
 
-        <!-- DAMM -->
-        <div class="partner-logo-wrap" title="Damm">
-          <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
-            <!-- Red star badge -->
-            <polygon points="14,2 16.5,9.5 24,9.5 18,14.5 20.5,22 14,17.5 7.5,22 10,14.5 4,9.5 11.5,9.5" fill="#E32819"/>
-            <polygon points="14,5 15.8,11 21.5,11 17,14.2 18.8,20 14,17 9.2,20 11,14.2 6.5,11 12.2,11" fill="#C3943A"/>
-            <!-- DAMM wordmark -->
-            <text x="30" y="25" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#E32819" letter-spacing="1">DAMM</text>
-          </svg>
-        </div>
 
-        <!-- DYNATRACE -->
-        <div class="partner-logo-wrap" title="Dynatrace">
-          <svg viewBox="0 0 130 36" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="dt-g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#B4DC00"/><stop offset="100%" stop-color="#73BE28"/></linearGradient></defs>
-            <!-- dt shield icon -->
-            <path d="M8 4 L20 4 L20 20 Q14 26 8 22 Z" fill="url(#dt-g)" opacity="0.9"/>
-            <path d="M10,13 L18,13 M14,9 L14,19" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <text x="26" y="25" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F" letter-spacing="0.3">dynatrace</text>
-          </svg>
-        </div>
-
-        <!-- UPF -->
-        <div class="partner-logo-wrap" title="Universitat Pompeu Fabra">
-          <svg viewBox="0 0 110 36" xmlns="http://www.w3.org/2000/svg">
-            <!-- Blue column icon -->
-            <rect x="4" y="8" width="5" height="20" rx="1" fill="#003DA5"/>
-            <rect x="11" y="4" width="5" height="24" rx="1" fill="#003DA5"/>
-            <rect x="18" y="8" width="5" height="20" rx="1" fill="#003DA5"/>
-            <text x="30" y="19" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#003DA5" letter-spacing="1">UPF</text>
-            <text x="30" y="30" font-family="Arial,sans-serif" font-size="7" font-weight="400" fill="#003DA5" letter-spacing="0.2">Pompeu Fabra</text>
-          </svg>
-        </div>
-
-        <!-- INNOIT -->
-        <div class="partner-logo-wrap" title="InnoIT">
-          <svg viewBox="0 0 100 36" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="innoit-g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#6366F1"/></linearGradient></defs>
-            <!-- Circuit node icon -->
-            <circle cx="14" cy="18" r="6" fill="none" stroke="url(#innoit-g)" stroke-width="2.5"/>
-            <circle cx="14" cy="18" r="2.5" fill="url(#innoit-g)"/>
-            <line x1="20" y1="18" x2="26" y2="18" stroke="url(#innoit-g)" stroke-width="2"/>
-            <!-- InnoIT text -->
-            <text x="28" y="23" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="url(#innoit-g)">InnoIT</text>
-          </svg>
-        </div>
-
-        <!-- THE AI SUMMIT -->
-        <div class="partner-logo-wrap" title="The AI Summit">
-          <svg viewBox="0 0 130 36" xmlns="http://www.w3.org/2000/svg">
-            <!-- Yellow detection-box corner marks (brand identity) -->
-            <rect x="3" y="3" width="8" height="2.5" fill="#FFEB00"/>
-            <rect x="3" y="3" width="2.5" height="8" fill="#FFEB00"/>
-            <rect x="19" y="3" width="8" height="2.5" fill="#FFEB00"/>
-            <rect x="24" y="3" width="2.5" height="8" fill="#FFEB00"/>
-            <rect x="3" y="25" width="8" height="2.5" fill="#FFEB00"/>
-            <rect x="3" y="19" width="2.5" height="8" fill="#FFEB00"/>
-            <rect x="19" y="25" width="8" height="2.5" fill="#FFEB00"/>
-            <rect x="24" y="19" width="2.5" height="8" fill="#FFEB00"/>
-            <!-- AI text inside brackets -->
-            <text x="9" y="23" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#FFEB00">AI</text>
-            <!-- THE AI SUMMIT wordmark -->
-            <text x="34" y="16" font-family="Arial,sans-serif" font-size="8" font-weight="600" fill="rgba(248,250,255,0.5)" letter-spacing="1">THE</text>
-            <text x="34" y="27" font-family="Arial,sans-serif" font-size="10" font-weight="800" fill="#f8faff" letter-spacing="0.5">SUMMIT</text>
-          </svg>
-        </div>
-
-      </div>
-    </div>
   </div>
 
   <!-- QA footnote -->
